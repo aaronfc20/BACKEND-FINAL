@@ -1,0 +1,22 @@
+GET http://localhost:3001/productos
+
+###
+
+POST http://localhost:3001/productos
+Content-Type: application/json
+
+{
+    "nombre": "Tarjetas Gráficas NVIDIA",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam suscipit, neque vitae egestas porta, eros neque vestibulum purus, at pretium nulla tellus sed mauris.",
+    "caracteristicas": ["Modelo: 7EH99AA#ABM", "Capacidad: 16GB", "Tipo: DDR4", "Voltaje: 1.2V", "Velocidad: 2666 MHZ", "Latencia: CL 19", "Número de módulos: 1", "Formato: SO-DIMM"],
+    "editor": "Serie",
+    "precio": 2850,
+    "stock": 10,
+    "imageUrl": "/img/flash-deals/video.jpg"
+}
+
+
+###
+
+DELETE http://localhost:3001/productos/9
+

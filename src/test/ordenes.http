@@ -1,0 +1,21 @@
+GET http://localhost:3001/ordenes
+
+###
+
+POST http://localhost:3001/ordenes
+Content-Type: application/json
+
+{
+  "shippingAddress": ["Calle Falsa 123", "Ciudad", "País"],
+  "paymentMethod": "Tarjeta de crédito",
+  "cartItems": [
+    { "id": 1, "cantidad": 2 },
+    { "id": 2, "cantidad": 1 }
+  ],
+  "total": 150.00,
+  "shippingMethod": "DHL",
+  "userId": 1
+}
+
+
+
